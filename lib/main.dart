@@ -4,8 +4,7 @@ import 'package:ex_showtime/repository/movie_repository.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  final mainTabProvider = MainTabProvider(movieRepository: MovieRepository());
-
+  final mainTabProvider = MainTabProvider(movieRepository: MovieRepository(), mainTabController: PageController());
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
       home: MainTabScreen(
